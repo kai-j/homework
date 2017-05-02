@@ -1,0 +1,14 @@
+以内的质数（机器不行，100w的算不出来，只能改为1w了） 
+#!/usr/bin/env python
+n=10000
+numbers = list(range(2,n+1))
+i = 2
+while i < 10001:
+    for m in numbers:
+        if i < m and m % i ==0:
+            numbers.remove(m)
+    i += 1
+print (numbers)
+
+
+
